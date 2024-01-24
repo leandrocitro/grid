@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+#container {
+    display: grid;
+    height: 100%;
+
+    grid-template:
+        "A A A" 5%
+        "B B B" 85%
+        "C C C" 5% / 1fr;
+
+        gap: 1px;
+    }
+
+#green {
+    background-color: green;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    grid-area: A;
+    
+
+}
+
+#red {
+    background-color: red;
+    margin: 3px 3px 3px 3px;
+    grid-template-columns: 50% 50%;
+    grid-area: B;
+    display: grid;
+    width: 100%;
+    
+}
+
+#yellow {
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#blue {
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    grid-area: C;
+
+}
+
+#pink {
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
